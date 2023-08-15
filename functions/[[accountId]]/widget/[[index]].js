@@ -76,9 +76,9 @@ class NoscriptDescriptionInjector {
 }
 
 function defaultData() {
-  const image = "https://near.social/assets/logo.png";
-  const title = "Near Social";
-  const description = "Social data protocol built on NEAR";
+  const image = "https://ipfs.near.social/ipfs/bafkreiavgky7fgrvwl4x4rxcypgew5ou6ahwf6mrcbtyswbvtbnrkrrobu";
+  const title = "NEAR Digital Collective";
+  const description = "The NDC is a Grassroots Movement, led by the NEAR Community to create Decentralized Web 3.0 Governance on NEAR.";
   return {
     image,
     title,
@@ -106,8 +106,8 @@ async function postData(env, url, data, isPost) {
     data.authorImage = await imageToUrl(env, authorImage);
   }
   data.title = isPost
-    ? `Post by ${name ?? accountId} | Near Social`
-    : `Comment by ${name ?? accountId} | Near Social`;
+    ? `Post by ${name ?? accountId} | NDC`
+    : `Comment by ${name ?? accountId} | NDC`;
   data.accountName = name;
   data.accountId = accountId;
 }
@@ -119,12 +119,12 @@ async function profileData(env, url, data) {
   const name = profile?.name;
   data.raw = profile;
   data.description =
-    profile?.description || `Profile of ${accountId} on Near Social`;
+    profile?.description || `Profile of ${accountId} on NDC`;
   data.image = await imageToUrl(env, profile?.image);
   data.authorImage = data.image || wrapImage(DefaultProfileImage);
   data.title = name
-    ? `${name} (${accountId}) | Near Social`
-    : `${accountId} | Near Social`;
+    ? `${name} (${accountId}) | NDC`
+    : `${accountId} | NDC`;
   data.accountName = name;
   data.accountId = accountId;
 }
@@ -142,7 +142,7 @@ async function widgetData(env, url, data) {
   data.description =
     metadata?.description || `Component ${name} created by ${accountId}`;
   data.image = await imageToUrl(env, metadata?.image);
-  data.title = `${name} by ${accountId} | Near Social`;
+  data.title = `${name} by ${accountId} | NDC`;
   data.accountName = name;
   data.accountId = accountId;
 }
@@ -161,7 +161,7 @@ async function sourceData(env, url, data) {
   data.description = source;
   data.image = null;
   data.authorImage = await imageToUrl(env, image);
-  data.title = `Source code of ${key} at block height ${blockHeight} | Near Social`;
+  data.title = `Source code of ${key} at block height ${blockHeight} | NDC`;
   data.accountId = accountId;
 }
 
