@@ -202,15 +202,15 @@ export function Menu(props) {
             </NavigationButton>
           </li>
           <li>
-            <NavigationButton route="/edit">
+            <NavigationButton route="/nomination.ndctools.near/widget/NDC.Nomination.Page">
               <Code />
-              Editor
+              Nomination
             </NavigationButton>
           </li>
           <li>
             <NavigationButton href={props.documentationHref}>
               <Book />
-              Documentation
+              Community
             </NavigationButton>
           </li>
         </ul>
