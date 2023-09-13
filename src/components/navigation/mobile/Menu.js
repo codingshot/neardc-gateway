@@ -204,7 +204,11 @@ export function Menu(props) {
           <li>
             <NavigationButton route="/nomination.ndctools.near/widget/NDC.Nomination.Page">
               <Code />
-              Nomination
+              Nominations
+            </NavigationButton>
+            <NavigationButton route="/election.ndctools.near/widget/NDC.Elections.Main">
+              <Code />
+              Election
             </NavigationButton>
           </li>
           <li>

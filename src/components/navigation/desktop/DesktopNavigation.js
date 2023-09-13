@@ -69,7 +69,8 @@ export function DesktopNavigation(props) {
         </Link>
         <div className="navigation-section">
           <NavigationButton route="/">Home</NavigationButton>
-          <NavigationButton route="/nomination.ndctools.near/widget/NDC.Nomination.Page">Nominate</NavigationButton>
+          <NavigationButton route="/election.ndctools.near/widget/NDC.Elections.Main">Election</NavigationButton>
+          <NavigationButton route="/nomination.ndctools.near/widget/NDC.Nomination.Page">Nominations</NavigationButton>
           <NavigationButton href={props.documentationHref}>
             Community
             <ArrowUpRight />
