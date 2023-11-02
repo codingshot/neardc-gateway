@@ -3,13 +3,12 @@
   "name": "Near Social",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "app.png",
       "sizes": "1024x1024",
       "type": "image/png"
     }
   ],
-  "start_url": ".",
   "display": "standalone",
-  "theme_color": "#333333",
+  "theme_color": "#151718",
   "background_color": "#ffffff"
 }
