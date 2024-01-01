@@ -69,12 +69,18 @@ export function DesktopNavigation(props) {
         </Link>
         <div className="navigation-section">
           <NavigationButton route="/">Home</NavigationButton>
-          <NavigationButton route="/election.ndctools.near/widget/NDC.Elections.Main">Election</NavigationButton>
-          <NavigationButton route="/nomination.ndctools.near/widget/NDC.Nomination.Page">Nominations</NavigationButton>
-          <NavigationButton href={props.documentationHref}>
+
+
+          <NavigationButton href="https://neardc.org/apply">
+            Forum
+            <ArrowUpRight />
+          </NavigationButton>
+          <NavigationButton href="https://neardc.org/telegram">
             Community
             <ArrowUpRight />
           </NavigationButton>
+          <NavigationButton route="/election.ndctools.near/widget/NDC.Elections.Main">Election</NavigationButton>
+          {false &&           <NavigationButton route="/nomination.ndctools.near/widget/NDC.Nomination.Page">Nominations</NavigationButton>}
         </div>
         <div className="user-section">
           <DevActionsDropdown {...props} />

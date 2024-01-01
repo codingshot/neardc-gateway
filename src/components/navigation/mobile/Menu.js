@@ -201,22 +201,25 @@ export function Menu(props) {
               Profile
             </NavigationButton>
           </li>
-          <li>
-            <NavigationButton route="/nomination.ndctools.near/widget/NDC.Nomination.Page">
-              <Code />
-              Nominations
+            <li>
+            <NavigationButton href="https://neardc.org/apply">
+              <Book />
+              Forum
             </NavigationButton>
-            <NavigationButton route="/election.ndctools.near/widget/NDC.Elections.Main">
-              <Code />
-              Election
-            </NavigationButton>
+
           </li>
           <li>
-            <NavigationButton href={props.documentationHref}>
+            <NavigationButton href="https://neardc.org/telegram">
               <Book />
               Community
             </NavigationButton>
           </li>
+          <li>
+            <NavigationButton route="/election.ndctools.near/widget/NDC.Elections.Main">
+              <Code />
+              Election
+            </NavigationButton>
+            </li>
         </ul>
         <ul className="bottom-links">
           {props.widgetSrc?.edit && (
